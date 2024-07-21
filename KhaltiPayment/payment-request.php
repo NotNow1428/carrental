@@ -64,8 +64,8 @@ if (isset($_POST['submit'])) {
     }
 
     $postFields = array(
-        "return_url" => "http://localhost/khalti-payment/payment-response.php",
-        "website_url" => "http://localhost/khalti-payment/",
+        "return_url" => "http://localhost/carrental/KhaltiPayment/payment-response.php",
+        "website_url" => "http://localhost/carrental/KhaltPayment/",
         "amount" => $amount,
         "purchase_order_id" => $purchase_order_id,
         "purchase_order_name" => $purchase_order_name,
