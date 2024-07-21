@@ -61,4 +61,4 @@ $output .= "
 ";
 
 echo $output;
-?>
+?>m
