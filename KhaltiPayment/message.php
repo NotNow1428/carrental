@@ -36,7 +36,7 @@ error_reporting(0);
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="../my-booking.php" class="btn btn-primary">Back to booking</a>
+                    <a href="../index.php" class="btn btn-primary">Back to Home</a>
                 </div>
             </div>
 
