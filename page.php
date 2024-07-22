@@ -55,6 +55,7 @@ foreach($results as $result)
                 </ul>
             </div>
         </div>
+        
         <!-- Dark Overlay-->
         <div class="dark-overlay"></div>
     </section>

@@ -24,6 +24,7 @@ $contactno=$result->ContactNo;
               <p class="uppercase_text">For Support Mail us : </p>
               <a href="mailto:<?php echo htmlentities($email);?>"><?php echo htmlentities($email);?></a> </div>
             <div class="header_widgets">
+
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Service Helpline Call Us: </p>
               <a href="tel:<?php echo htmlentities($contactno);?>"><?php echo htmlentities($contactno);?></a> </div>
@@ -60,6 +61,7 @@ echo "Welcome To Yatri car service";
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>
+
         <div class="user_login">
           <ul>
             <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> 
@@ -91,13 +93,13 @@ foreach($results as $result)
           </ul>
         </div>
       </div>
+
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
           <li><a href="page.php?type=aboutus">About Us</a></li>
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="contact-us.php">Contact Us</a></li>
-
         </ul>
       </div>
     </div>
