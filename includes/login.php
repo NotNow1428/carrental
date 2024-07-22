@@ -22,7 +22,6 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
 }
 
 }
-
 ?>
 
 <div class="modal fade" id="loginform">
