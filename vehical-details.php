@@ -82,7 +82,6 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
     <!-- /Header -->
 
     <!--Listing-Image-Slider-->
-
     <?php 
 $vhid=intval($_GET['vhid']);
 $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
@@ -129,7 +128,7 @@ $_SESSION['brndid']=$result->bid;
                 </div>
                 <div class="col-md-3">
                     <div class="price_info">
-                        <p>NPR  <?php echo htmlentities($result->PricePerDay);?> </p>Per Day
+                        <p>NPR <?php echo htmlentities($result->PricePerDay);?> </p>Per Day
 
                     </div>
                 </div>
@@ -177,7 +176,7 @@ $_SESSION['brndid']=$result->bid;
 
                                 <!-- Accessories -->
                                 <div role="tabpanel" class="tab-pane" id="accessories">
-                                    <!--Accessories-->
+
                                     <table>
                                         <thead>
                                             <tr>
@@ -346,12 +345,13 @@ $_SESSION['brndid']=$result->bid;
                         <form method="post">
                             <div class="form-group">
                                 <label>From Date:</label>
-                                <input type="date" class="form-control" name="fromdate" placeholder="From Date"
-                                    required>
+                                <input type="date" class="form-control" name="fromdate" placeholder="From Date" required
+                                    min="<?php echo date('Y-m-d'); ?>">
                             </div>
                             <div class="form-group">
                                 <label>To Date:</label>
-                                <input type="date" class="form-control" name="todate" placeholder="To Date" required>
+                                <input type="date" class="form-control" name="todate" placeholder="To Date" required
+                                    min="<?php echo date('Y-m-d'); ?>">
                             </div>
                             <div class="form-group">
                                 <textarea rows="4" class="form-control" name="message" placeholder="remarks"
@@ -402,7 +402,7 @@ foreach($results as $result)
                             <div class="product-listing-content">
                                 <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?>
                                         , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-                                <p class="list-price">NPR  <?php echo htmlentities($result->PricePerDay);?></p>
+                                <p class="list-price">NPR <?php echo htmlentities($result->PricePerDay);?></p>
 
                                 <ul class="features_list">
 

@@ -116,7 +116,6 @@ foreach($results as $result)
     </section>
     <!-- /Resent Cat -->
 
-    
     <!-- Fun Facts-->
     <?php
 $brand_query = $dbh->query("SELECT COUNT(*) FROM tblbrands");
